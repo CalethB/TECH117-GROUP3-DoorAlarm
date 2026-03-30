@@ -9,10 +9,6 @@ main {
 
 
 
-:root {
-    color-scheme: light dark;
-}
-
 body {
     font-family: system-ui, Arial, sans-serif;
     line-height: 1.6;
@@ -55,6 +51,10 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+#circuit-diagram img {
+    max-width: 50%;
 }
 
 table {

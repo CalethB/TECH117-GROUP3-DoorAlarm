@@ -64,13 +64,13 @@
 
   <section id="introduction">
     <h2>Introduction</h2>
-    <p>This project is a simple security system that detects when a door is opened and triggers an alarm using a <strong>buzzer</strong>,<strong> infrared sensor</strong> and <strong>LED</strong>. It helps prevent unauthorized access by alerting the user immediately. The system can be used for home or room security. 
+    <p>This project is a simple security system that detects when a door is opened and triggers an alarm using a <strong>buzzer</strong>,<strong> infrared sensor</strong> and <strong>LED</strong>. It helps prevent unauthorized access by alerting the user immediately. The system can be used for home or room security. It should be able to detect when the door is opened and trigger an alarm, providing a simple yet effective security solution, it will beep when the door is opened and as an option a LED will light up to indicate the status of the door. One of the hardest parts of the project was to find a way to make the system work with an infrared sensor, since it is not as common as other sensors, also there is not enough time to make it really good as we would like, it was a little hard to find stuff where to find references and information about how to use the infrared sensor, but we found some projects that use it and we were able to make it work, also we had some problems with the code since we are not used to program in C++ but we were able to make it work after some research and testing.
     </p>
   </section>
 
   <section id="circuit-diagram">
     <h2>Circuit Diagram</h2>
-    <p>With the infrared sensor (IR) we can have a door alarm that detects when it opens by having an small wall that blocks the signal from the sensor and turns on when we move the door from he wall, and the LED also show us that someone is breaking into the house.</p>
+    <p>With the infrared sensor (IR) we can have a door alarm that detects when it opens by having an small wall that blocks the signal from the sensor and turns on when we move the door from he wall, and the LED  will blink and show show us that someone is breaking into the house.</p>
     <img src="Obstacle-dectector-with-IR-sensor.jpg" alt="Arduino collision warning system">
   </section>
 
@@ -103,58 +103,51 @@
         <tr>
           <td>Arduino Uno Rev3</td>
           <td>1</td>
-          <td>$27.60</td>
-          <td>$27.60</td>
-          <td><a href="https://store-usa.arduino.cc/products/arduino-uno-rev3">Arduino Store</a></td>
+          <td>$6.31</td>
+          <td>$6.31</td>
+          <td><a href="https://www.aliexpress.com/item/1005009850029192.html?src=google&src=google&albch=shopping&acnt=631-313-3945&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=UneMJZVf&gclsrc=aw.ds&&albagn=888888&&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=en1005009850029192&ds_e_product_merchant_id=5360280250&ds_e_product_country=CA&ds_e_product_language=en&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=19366866438&albag=&isSmbAutoCall=false&needSmbHouyi=false&gad_source=1&gad_campaignid=17337458112&gbraid=0AAAAACbpRIlO-Pb1ALzIKGy-bkuINwtUC&gclid=CjwKCAjwvqjOBhAGEiwAngeQnR8RYJu126oS2Ndnpceh3uk0pZoXTRCJ673lyeuwmfZ_zZ5wT8w-wxoCm5cQAvD_BwE">AliExpress</a></td>
         </tr>
         <tr>
-          <td>HC-SR04 Ultrasonic Sensor</td>
+          <td>IR Infrared Obstacle Avoidance Sensor</td>
           <td>1</td>
-          <td>$3.95</td>
-          <td>$3.95</td>
-          <td><a href="https://www.adafruit.com/product/3942">Adafruit</a></td>
+          <td>$1.00</td>
+          <td>$1.00</td>
+          <td><a href="https://www.aliexpress.com/item/1005009170825455.html?src=google&pdp_npi=4%40dis!CAD!0.91!0.85!!!!!%40!12000056127134574!ppc!!!">AliExpress</a></td>
         </tr>
         <tr>
           <td>Passive Buzzer</td>
           <td>1</td>
-          <td>$0.95</td>
-          <td>$0.95</td>
-          <td><a href="https://www.sparkfun.com/passive-buzzer-module.html">SparkFun</a></td>
+          <td>$1.32</td>
+          <td>$1.32</td>
+          <td><a href="https://www.digikey.ca/en/products/detail/soberton-inc/WT-1209T/16384509?gclsrc=aw.ds&gad_source=1&gad_campaignid=17336435733&gbraid=0AAAAADrbLli_oYJjJ_R0BfgjiYqfZnp-l&gclid=CjwKCAjwvqjOBhAGEiwAngeQnZt4ki5XQWcKo9uxm20dXg18h6IkG7s0pz4xUXb5BusFdzCZ4MTjaxoCz1QQAvD_BwE">Digi-Key</a></td>
         </tr>
         <tr>
-          <td>LEDs (Red, Yellow, Green)</td>
-          <td>3</td>
-          <td>$0.20</td>
-          <td>$0.60</td>
-          <td>Adafruit</td>
+          <td>LEDs (Red)</td>
+          <td>1</td>
+          <td>$0.40</td>
+          <td>$0.40</td>
+         <td><a href="https://www.digikey.ca/en/products/detail/kingbright/WP7113SURDK/16602177?gclsrc=aw.ds&gad_source=1&gad_campaignid=17336435733&gbraid=0AAAAADrbLli_oYJjJ_R0BfgjiYqfZnp-l&gclid=CjwKCAjwvqjOBhAGEiwAngeQnZ3b2XwVKoVP4kJ4l2Pb3NX724UIWS4_Fs4RKBJjZf1xDQQlm6qf3xoCzrcQAvD_BwE">Digi-Key</a></td>
         </tr>
         <tr>
           <td>220 Ω Resistors</td>
           <td>3</td>
-          <td>$0.03</td>
-          <td>$0.09</td>
-          <td>Adafruit</td>
+          <td>$0.16</td>
+          <td>$0.48</td>
+          <td><a href="https://www.digikey.ca/en/products/detail/koa-speer-electronics-inc/CFS1-4CT52R221J/13538219?gclsrc=aw.ds&gad_source=4&gad_campaignid=23192198598&gbraid=0AAAAADrbLljhFPxjSvOWipf9Fj8C7_0qd&gclid=CjwKCAjwvqjOBhAGEiwAngeQnTjtbJ2LUpRL-pgqUcMu4jyewqsNEE7ev-WvwQtTJnE9Kqn45dpHNxoCTBAQAvD_BwE">Digi-Key</a></td>
         </tr>
         <tr>
-          <td>Breadboard</td>
+          <td>Breadboard and Jumper Wires</td>
           <td>1</td>
-          <td>$4.95</td>
-          <td>$4.95</td>
-          <td><a href="https://www.adafruit.com/product/64">Adafruit</a></td>
+          <td>$9.99</td>
+          <td>$9.99</td>
+          <td><a href="https://www.amazon.ca/Haobase-Solderless-Breadboard-Points-Contacts/dp/B01FJ7FJKO/ref=asc_df_B01FJ7FJKO?mcid=05f5108cd0d83918a1c218b3f564ebfc&tag=googleshopc0c-20&linkCode=df0&hvadid=706724917197&hvpos=&hvnetw=g&hvrand=12539606091639028348&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198443&hvtargid=pla-2297015288322&psc=1&hvocijid=12539606091639028348-B01FJ7FJKO-&hvexpln=0&gad_source=1">Amazon</a></td>
         </tr>
-        <tr>
-          <td>Jumper Wires</td>
-          <td>1 set</td>
-          <td>$3.50</td>
-          <td>$3.50</td>
-          <td><a href="https://www.sparkfun.com/jumper-wires-standard-7-m-m-30-awg-30-pack.html">SparkFun</a>
-          </td>
         </tr>
       </tbody>
       <tfoot>
         <tr>
           <td colspan="3">Estimated Total</td>
-          <td>$41.64</td>
+          <td>$23.00</td>
           <td>—</td>
         </tr>
       </tfoot>
