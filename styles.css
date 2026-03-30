@@ -219,6 +219,7 @@ nav#menu a:hover {
     color: #000 !important;
     border: none !important;
     -webkit-print-color-adjust: exact;   /* ensure colors (if any) print as specified */
+    print-color-adjust: exact;           /* standard property for compatibility */
     page-break-inside: auto !important; /* allow splitting across pages when necessary */
     break-inside: auto !important;
   }
