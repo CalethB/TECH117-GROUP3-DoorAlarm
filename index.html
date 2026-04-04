@@ -64,26 +64,35 @@
 
   <section id="introduction">
     <h2>Introduction</h2>
-    <p>This project is a simple security system that detects when a door is opened and triggers an alarm using a <strong>buzzer</strong>,<strong> infrared sensor</strong> and <strong>LED</strong>. It helps prevent unauthorized access by alerting the user immediately. The system can be used for home or room security. It should be able to detect when the door is opened and trigger an alarm, providing a simple yet effective security solution, it will beep when the door is opened and as an option a LED will light up to indicate the status of the door. One of the hardest parts of the project was to find a way to make the system work with an infrared sensor, since it is not as common as other sensors, also there is not enough time to make it really good as we would like, it was a little hard to find stuff where to find references and information about how to use the infrared sensor, but we found some projects that use it and we were able to make it work, also we had some problems with the code since we are not used to program in C++ but we were able to make it work after some research and testing.
+    <p>This project is a simple security system that detects when a door is opened and triggers an alarm using a <strong>buzzer</strong>,<strong> infrared sensor</strong> and <strong>LED</strong>. It helps prevent unauthorized access by alerting the user immediately.
     </p>
+    <p>The system can be used for home or room security. It should be able to detect when the door is opened and trigger an alarm, providing a simple yet effective security solution, it will beep when the door is opened and as an option a LED will light up to indicate the status of the door.
+    </p>
+    <p>One of the hardest parts of the project was to find a way to make the system work with an infrared sensor, since it is not as common as other sensors, also there is not enough time to make it really good as we would like, it was a little hard to find stuff where to find references and information about how to use the infrared sensor.</p>
+    <p>Although we weren't familiar with C++ programming, we successfully implemented the project by researching existing examples and refining the code through extensive testing.</p>
   </section>
 
   <section id="circuit-diagram">
     <h2>Circuit Diagram</h2>
-    <p>With the infrared sensor (IR) we can have a door alarm that detects when it opens by having an small wall that blocks the signal from the sensor and turns on when we move the door from he wall, and the LED  will blink and show show us that someone is breaking into the house.</p>
-    <img src="Obstacle-dectector-with-IR-sensor.jpg" alt="Arduino collision warning system">
+    <p>The first image shows the overall circuit design that we will be using for the Smart Door Anti-Intrusion Alarm System,
+      in this circuit we have an Arduino Uno Rev3 as the main controller, an infrared sensor (IR) to detect when the door is opened, a passive buzzer to sound the alarm, and a red LED to indicate the status of the door. The IR sensor will be placed in such a way that it can detect when the door is opened by having a small wall that blocks the signal from the sensor and turns on when we move the door from the wall, and the LED will blink and show us that someone is breaking into the house.
+    </p>
+    <p>Note that in the first image, We are using an PIR Sensor to simulate the infrared sensor behavior.</p>
+     <img src="Smart Door Anti-Intrusion System Tinker CAD.png" alt="Smart Door Anti-Intrusion System">
+    
+    <p>The second image showsthe infrared sensor (IR) we can have a door alarm that detects when it opens by having an small wall that blocks the signal from the sensor and turns on when we move the door from he wall, and the LED  will blink and show show us that someone is breaking into the house.</p>
+    <img src="Obstacle-dectector-with-IR-sensor.jpg" alt="IR Sensor Circuit Diagram">
   </section>
 
   <section id="environment">
     <h2>Environmental Impact Assessment</h2>
     <ul>
-      <li><strong>Materials:</strong> The Arduino Uno is RoHS and WEEE compliant, limiting hazardous substances.
+      <li><strong>Power Optimization:</strong> Use rechargeable batteries or a small solar panel to power the Arduino board to reduce the use of disposable batteries.
       </li>
-      <li><strong>Energy Conservation:</strong> The circuit draws minimal power (~50 mA at 5V), ideal for USB or
-        solar power.</li>
-      <li><strong>Reusability:</strong> All components are modular and reusable, reducing electronic waste.</li>
-      <li><strong>Packaging & Shipping:</strong> Ordering all components from a single supplier helps minimize
-        carbon footprint.</li>
+      <li><strong>Components Longevity:</strong> Use conformal coating to protect the board from moisture and dust, extending its life.</li>
+      <li><strong>Use sustainable materials:</strong> Some developers are exploring bio-based printed circuit boards (PCBs) to replace traditional materials.</li>
+      <li><strong>Manufacturing Footprint:</strong> The production of microcontrollers and sensors involves mining raw materials, which causes habitat disruption and requires significant energy.</li>
+      <li><strong>Energy consumption:</strong> While IR sensors operate on low power, they require a constant 5V power supply, which often comes from batteries (USB packs) that need frequent recharging or replacement.</li>
     </ul>
   </section>
 
@@ -271,11 +280,20 @@ void loop() {
 
   <ul>
     <li>
-      Arduino Project Hub. (n.d.). 
-      <em>Ultrasonic sensor projects.</em> 
+      You Tube. (n.d.). 
+      <em>IR Infrared obstacle sensor.</em> 
       Arduino Project Hub. 
-      <a href="https://projecthub.arduino.cc/projects/tags/ultrasonic-sensor" target="_blank" rel="noopener noreferrer">
-        https://projecthub.arduino.cc/projects/tags/ultrasonic-sensor
+      <a href="https://www.youtube.com/watch?v=ESqhOKgKt5c" target="_blank" rel="noopener noreferrer">
+        https://www.youtube.com/watch?v=ESqhOKgKt5c
+      </a>
+    </li>
+
+    <li>
+      You Tube. (n.d.). 
+      <em>PIR Sensor Circuit Reference.</em> 
+      Arduino Project Hub. 
+      <a href="https://www.youtube.com/watch?v=NUXe0e3T5T4" target="_blank" rel="noopener noreferrer">
+        https://www.youtube.com/watch?v=NUXe0e3T5T4
       </a>
     </li>
 
@@ -291,38 +309,13 @@ void loop() {
     <li>
       Arduino Project Hub. (n.d.). 
       <em>LED projects.</em> 
-      Arduino Project Hub. 
-      <a href="https://projecthub.arduino.cc/projects/tags/led" target="_blank" rel="noopener noreferrer">
-        https://projecthub.arduino.cc/projects/tags/led
+      Arduino ProjectHub. 
+      <a href="https://projecthub.arduino.cc/aboda243/obstacle-detector-using-ir-module-tutorial-101320" target="_blank" rel="noopener noreferrer">
+        https://projecthub.arduino.cc/aboda243/obstacle-detector-using-ir-module-tutorial-101320
       </a>
     </li>
 
-    <li>
-      Instructables. (n.d.). 
-      <em>Distance measurement using ultrasonic sensor.</em> 
-      Instructables. 
-      <a href="https://www.instructables.com/Arduino-Distance-Measurement-Using-Ultrasonic-Senso/" target="_blank" rel="noopener noreferrer">
-        https://www.instructables.com/Arduino-Distance-Measurement-Using-Ultrasonic-Senso/
-      </a>
-    </li>
-
-    <li>
-      Circuit Basics. (n.d.). 
-      <em>How to use an ultrasonic sensor with Arduino.</em> 
-      Circuit Basics. 
-      <a href="https://www.circuitbasics.com/how-to-use-an-ultrasonic-sensor-with-arduino/" target="_blank" rel="noopener noreferrer">
-        https://www.circuitbasics.com/how-to-use-an-ultrasonic-sensor-with-arduino/
-      </a>
-    </li>
-
-    <li>
-      Last Minute Engineers. (n.d.). 
-      <em>Ultrasonic sensor tutorial.</em> 
-      Last Minute Engineers. 
-      <a href="https://lastminuteengineers.com/ultrasonic-sensor-arduino-tutorial/" target="_blank" rel="noopener noreferrer">
-        https://lastminuteengineers.com/ultrasonic-sensor-arduino-tutorial/
-      </a>
-    </li>
+    
   </ul>
 </section>
 
