@@ -57,6 +57,26 @@ img {
     max-width: 50%;
 }
 
+.prototype-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.prototype-video video {
+    width: 25% !important;
+    max-width: 25% !important;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.prototype-gallery img {
+    flex: 1 1 300px;
+    max-width: 48%;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
